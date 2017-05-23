@@ -4,6 +4,9 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 
 # Powerlevel
+POWERLEVEL9K_MODE='awesome-fontconfig'
+POWERLEVEL9K_STATUS_VERBOSE=false
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status virtualenv)
 
 # Homeshick
@@ -19,15 +22,15 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Paths
 export PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:$PATH"
-export PATH="/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
-export PATH="/opt/X11/bin:$PATH"
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+export PATH="/usr/X11/bin:$PATH"
 export PATH="/usr/texbin:$PATH"
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 # export PATH="$(brew --prefix imagemagick)/bin:$PATH"
 export PATH="/usr/local/opt/imagemagick/bin:$PATH"
-export PATH="/usr/local/bin:$PATH"
 # export PATH="$(brew --prefix homebrew/php/php70)/bin:$PATH"
 export PATH="/usr/local/opt/php70/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 # Aliases

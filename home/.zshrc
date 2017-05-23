@@ -16,6 +16,9 @@ zplug "modules/history", from:prezto
 # zplug "modules/python", from:prezto
 zplug "modules/osx", from:prezto
 zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
+zplug "rupa/z", use:z.sh
+zplug "changyuheng/fz"
+zplug "paulirish/git-open", as:plugin
 
 # All env variables and aliases
 zplug "~/.zshenv", from:local
@@ -35,3 +38,6 @@ zplug load
 
 BASE16_SHELL=$HOME/.config/base16-shell/
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}'
+zstyle ':completion:*' menu select
+zstyle ':completion:*' separate-sections 'yes'
